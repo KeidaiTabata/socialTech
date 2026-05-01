@@ -82,3 +82,41 @@ header {
         z-index: 1;
     }
 }
+
+#mission {
+
+    margin: 80px auto;
+    h2 {
+        margin-top: 40px;
+        &::after {
+            content: url("images/line.png");
+            margin-left: 10px;
+        }
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+
+    #mission-wrapper {
+        display: flex;
+
+        & > div {
+            width: 50%;
+            margin: 20px;
+        }
+
+        #mission-left {
+            img {
+                width: 100%;
+            }
+        }
+
+        #mission-right {
+            & > img {
+                width: 100%;
+            }
+        }
+    }
+    
+}
