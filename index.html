@@ -37,6 +37,8 @@
                 <img src="images/index/index-main.png" alt="PCの周りに集まる多国籍の仲間たち">
             </section>
 
+            <!-- ここからミッション -->
+
             <section id="mission">
                 <h2>MISSION</h2>
 
@@ -56,14 +58,96 @@
                         <h3>S2DGsの実現</h3>
                         <p>国連が掲げる「Sustainable Development
                             Goals（持続可能な開発目標）」に含まれる17つのグローバル目標のうち、以下の5つの目標の実現をミッションとしてサービスを展開しています。</p>
-                        <a href="mission.html">
-                            <img src="images/button-more.png" alt="もっとみる">
-                        </a>
                     </div>
                 </div>
             </section>
+            <!-- ここまでミッション -->
+
+            <!-- ここからプロダクト -->
+
+            <section id="product">
+                <h2 class="index-h2">PRODUCT</h2>
+                <div class="product-flex">
+                    <div id="productLeft">
+                        <!-- ここにJSでのループ文章が入ります。 -->
+                    </div>
+                    <div id="productRight">
+                        <!-- ここにJSでのループ文章が入ります。 -->
+                    </div>
+                </div>
+            </section>
+
+            <a href="mission.html" class="moreButton">
+                <img src="images/button-more.png" alt="もっとみる">
+            </a>
         </article>
     </main>
+
+    <script>
+        const productList = [
+            {
+                imgSrc: "images/index/index-mantoman.png",
+                cardTitle: "MAN TO MAN",
+                cardCopy: "プログラミング教育",
+                cardText: "2013年より日本で唯一の専属講師によるマンツーマンのプログラミングレッスンを開始。AI/人工知能やウェブデザインの学習も可能です。"
+            },
+            {
+                imgSrc: "images/index/index-career.png",
+                cardTitle: "CARRER",
+                cardCopy: "人材紹介事業",
+                cardText: "エンジニアへの転職に特化した履歴書や職務経歴書のアドバイスや面接対策を行い、豊富な求人の中から最適なキャリア選択を支援します。"
+            },
+            {
+                imgSrc: "images/index/index-media.png",
+                cardTitle: "MEDIA",
+                cardCopy: "プログラミング学習メディア",
+                cardText: "月間200万人に読まれる日本最大級のプログラミング学習サイト「SocialTech Blog」やYouTubeチャネルにて学習情報を発信しています。"
+            },
+            {
+                imgSrc: "images/index/index-b2b.png",
+                cardTitle: "B2B",
+                cardCopy: "法人研修事業",
+                cardText: "社員のスキルアップ・資格取得・福利厚生を目的としたプログラミング法人研修。貴社の事業モデルに合わせた研修内容の提案を致します。"
+            }
+        ]
+
+        let prodcutLeftContent = "";
+        let productRightContent = "";
+
+        productList.slice(0, 2).forEach(p => {
+            prodcutLeftContent += `
+                    <div>
+                        <img class="product-photo" src="${p.imgSrc}" alt="PCでコードを書く男性">
+                        <div class="product-explain">
+                            <span>${p.cardTitle}</span>
+                            <h3>${p.cardCopy}</h3>
+                            <p>${p.cardText}</p>
+                        </div>
+                    </div>
+            `
+        });
+
+        productList.slice(2, 4).forEach(p => {
+            productRightContent += `
+                    <div>
+                        <img class="${p.imgClass}" src="${p.imgSrc}" alt="PCでコードを書く男性">
+                        <div class="product-explain">
+                            <span>${p.cardTitle}</span>
+                            <h3>${p.cardCopy}</h3>
+                            <p>${p.cardText}</p>
+                        </div>
+                    </div>
+            `
+        });
+
+
+
+        const ProductLeft = document.getElementById('productLeft');
+        const ProductRight = document.getElementById('productRight');
+
+        ProductLeft.innerHTML = prodcutLeftContent;
+        ProductRight.innerHTML = productRightContent;
+    </script>
 </body>
 
 </html>

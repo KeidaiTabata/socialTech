@@ -1,6 +1,7 @@
 :root {
     --main-color:#ffffff;    
     --mainBg-color :#2710d5;
+    --section-bgColor : #fafafa;
 }
 p {
     font-size: 15px;
@@ -119,4 +120,76 @@ header {
         }
     }
     
+}
+
+/* ココからプロダクト */
+
+#product {
+
+    background-color: var(--section-bgColor);
+    margin: 80px 0 80px 0;
+    padding: 10px 40px 0 40px;
+
+    .product-flex {
+        display: flex;
+        margin-top: 40px;
+        
+        #productLeft {
+            width: 50%;
+
+            & > div {
+                position: relative;
+                margin-right: 20px;
+            }
+        }
+
+        #productRight {
+            width: 50%;
+            margin-top: 80px;
+
+            & > div {
+                position: relative;
+                height: 480px;
+                margin-left: 20px;
+                
+            }            
+        }
+
+        .product-photo {
+            width: 100%;
+        }
+
+        .product-explain {
+            background-color: var(--main-color);
+            position: absolute;
+            left: 0;
+            bottom: 50px;
+            margin: 0 40px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba((0, 0, 0, 0.05));
+
+            span {
+                color: var(--mainBg-color);
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            h3 {
+                margin: 5px 0;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+        
+    }
+}
+
+/* ここまでプロダクト */
+
+.moreButton {
+    display: block;
+    text-align: center;
+    margin: auto;
 }
