@@ -75,11 +75,74 @@
                         <!-- ここにJSでのループ文章が入ります。 -->
                     </div>
                 </div>
+                <a href="mission.html" class="moreButton">
+                    <img src="images/button-more.png" alt="もっとみる">
+                </a>
             </section>
 
-            <a href="mission.html" class="moreButton">
-                <img src="images/button-more.png" alt="もっとみる">
-            </a>
+            <!-- ここまでプロダクト -->
+
+            <!-- ここから ABOUT US -->
+
+            <section id="aboutus">
+                <h2 class="index-h2">ABOUT US</h2>
+                <h3>3つの組織文化</h3>
+                <div>
+                    <table class="culture-table">
+                        <tr>
+                            <td class="culture-num">01</td>
+                            <th><span class="culture-en">FLEXIBLE</span><br>フレキシブル</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--空のセル-->
+                            </td>
+                            <td class="culture-description">リモートワーク、フルフレックス、副業推奨など1人1人が最大限のパフォーマンスを発揮できる柔軟な働き方を促進しています。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="culture-num">02</td>
+                            <th><span class="culture-en">TEAL</span><br>ティール</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--空のセル-->
+                            </td>
+                            <td class="culture-description">会社全体を1つの生命体として捉え、お互いが深く結びついた一階層型
+                                組織として部署・チーム関係なく課題解決をできる組織を目指しています。</td>
+                        </tr>
+                        <tr>
+                            <td class="culture-num">03</td>
+                            <th><span class="culture-en">SELF REALIZATION</span><br>自己実現</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--空のセル-->
+                            </td>
+                            <td class="culture-description">クオーター毎に経営・部署・個人ごとにOKRを設定し個人のキャリアと 会社の目指す方向の軌道修正を行っております。
+                            </td>
+                        </tr>
+                    </table>
+                    <img src="images/index/index-aboutus1.png" alt="" class="culture-img">
+                </div>
+                <img src="images/index/index-aboutus2.png" alt="" class="culture-img2">
+            </section>
+
+            <!-- ここまでAbout Us -->
+
+            <!-- ここからVISION -->
+
+            <section class="vision">
+                <h2>VISION</h2>
+                <h3>7つの行動指針</h3>
+                <div>
+                    <h4>CUSTMER IS BOSS</h4>
+                    <h5>あなたのボスは顧客である</h5>
+                    <p>私たちは常にお客様思考で行動し、</p>
+                </div>
+            </section>
+
+            <!-- ここまでVISION -->
         </article>
     </main>
 
@@ -130,7 +193,7 @@
         productList.slice(2, 4).forEach(p => {
             productRightContent += `
                     <div>
-                        <img class="${p.imgClass}" src="${p.imgSrc}" alt="PCでコードを書く男性">
+                        <img class="product-photo" src="${p.imgSrc}" alt="PCでコードを書く男性">
                         <div class="product-explain">
                             <span>${p.cardTitle}</span>
                             <h3>${p.cardCopy}</h3>
@@ -139,8 +202,6 @@
                     </div>
             `
         });
-
-
 
         const ProductLeft = document.getElementById('productLeft');
         const ProductRight = document.getElementById('productRight');

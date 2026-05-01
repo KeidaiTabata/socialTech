@@ -1,10 +1,20 @@
 :root {
-    --main-color:#ffffff;    
-    --mainBg-color :#2710d5;
-    --section-bgColor : #fafafa;
+    --main-color: #ffffff;
+    --mainBg-color: #2710d5;
+    --section-bgColor: #fafafa;
 }
+
 p {
     font-size: 15px;
+}
+
+h2 {
+    margin-top: 40px;
+
+    &::after {
+        content: url("images/line.png");
+        margin-left: 10px;
+    }
 }
 
 body {
@@ -55,7 +65,7 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        background-color:var(--mainBg-color) ;
+        background-color: var(--mainBg-color);
         color: var(--main-color);
         border-radius: 0 0 476px 0;
         max-width: 620px;
@@ -76,7 +86,7 @@ header {
 
     img {
         max-width: 620px;
-        border-radius:476px 0 0 0;
+        border-radius: 476px 0 0 0;
         position: absolute;
         top: 0;
         right: 0;
@@ -87,13 +97,7 @@ header {
 #mission {
 
     margin: 80px auto;
-    h2 {
-        margin-top: 40px;
-        &::after {
-            content: url("images/line.png");
-            margin-left: 10px;
-        }
-    }
+
 
     h3 {
         font-size: 27px;
@@ -102,7 +106,7 @@ header {
     #mission-wrapper {
         display: flex;
 
-        & > div {
+        &>div {
             width: 50%;
             margin: 20px;
         }
@@ -114,12 +118,12 @@ header {
         }
 
         #mission-right {
-            & > img {
+            &>img {
                 width: 100%;
             }
         }
     }
-    
+
 }
 
 /* ココからプロダクト */
@@ -133,12 +137,13 @@ header {
     .product-flex {
         display: flex;
         margin-top: 40px;
-        
+
         #productLeft {
             width: 50%;
 
-            & > div {
+            &>div {
                 position: relative;
+                height: 480px;
                 margin-right: 20px;
             }
         }
@@ -147,12 +152,12 @@ header {
             width: 50%;
             margin-top: 80px;
 
-            & > div {
+            &>div {
                 position: relative;
                 height: 480px;
                 margin-left: 20px;
-                
-            }            
+
+            }
         }
 
         .product-photo {
@@ -166,7 +171,7 @@ header {
             bottom: 50px;
             margin: 0 40px;
             padding: 20px;
-            box-shadow: 5px 5px 10px rgba((0, 0, 0, 0.05));
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
 
             span {
                 color: var(--mainBg-color);
@@ -182,7 +187,7 @@ header {
                 font-size: 14px;
             }
         }
-        
+
     }
 }
 
@@ -192,4 +197,48 @@ header {
     display: block;
     text-align: center;
     margin: auto;
+}
+
+/* ここからAbout us */
+
+#aboutus {
+    margin: 80px auto;
+
+    &>div {
+        display: flex;
+
+        img {
+            align-self: flex-start;
+            width: 50%;
+
+        }
+    }
+
+    .culture-img2 {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .culture-table {
+        margin-right: 50px;
+
+        .culture-num {
+            font-size: 80px;
+            color: var(--mainBg-color);
+            padding-right: 20px;
+        }
+
+
+        th {
+            text-align: left;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .culture-en {
+            color:var(--mainBg-color);
+            font-size: 24px;
+        }
+    }
+
 }
