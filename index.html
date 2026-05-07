@@ -15,7 +15,7 @@
             <img src="images/logo.png" alt="トップページに戻る">
         </a>
 
-        <nav>
+        <nav class="nav-pc">
             <ul>
                 <li><a href="mission.html">MISSION</a></li>
                 <li><a href="product.html">PRODUCT</a></li>
@@ -25,6 +25,44 @@
                 <li><a href="index.html#content">CONTACT</a></li>
             </ul>
         </nav>
+
+        <!-- スマホ用ハンバーガーーボタン -->
+        <button id="menu-sp-btn" onclick="openSpMenu">
+            <img src="images/button-menu.png" alt="ナビゲーションを開く">
+        </button>
+
+        <!-- スマホ用ナビゲーション -->
+        <div id="nav-sp"t>
+            <button id="close">
+                <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+            </button>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" id="logo-sp">
+                            <img src="images/logo-sp.png" alt="トップページに戻る">
+                        </a>
+                    </li>
+                    <li><a href="mission.html" class="menu">MISSION</a></li>
+                    <li><a href="product.html" class="menu">PRODUCT</a></li>
+                    <li><a href="index.html#abouts" class="menu">ABOUT US</a></li>
+                    <li><a href="index.html#vision" class="menu">VISION</a></li>
+                    <li><a href="index.html#company" class="menu">COMPANY</a></li>
+                    <li><a href="index.html#contact" class="menu">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="sns">
+                <a href="https://www.facebook.com/sejuku2013">
+                    <img src="images/button-facebook.png" alt="Facebookのリンク">
+                </a>
+                <a href="https://twitter.com/samuraijuku">
+                    <img src="images/button-twitter.png" alt="Twitterのリンク">
+                </a>
+                <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g">
+                    <img src="images/button-youtube.png" alt="YouTubeのリンク">
+                </a>
+            </div>
+        </div><!-- nav-sp -->
     </header>
 
     <main>
@@ -182,7 +220,7 @@
                             <lavel class="contact-label">お名前<span class="contact-span">必須</span></lavel>
                         </div>
                         <div>
-                            <input type="text" class="contact-textbox"  placeholder="入力してください">
+                            <input type="text" class="contact-textbox" placeholder="入力してください">
                         </div>
                     </div>
                     <div class="formItem">
@@ -190,7 +228,7 @@
                             <lavel class="contact-label">フリガナ<span class="contact-span">必須</span></lavel>
                         </div>
                         <div>
-                            <input type="text" class="contact-textbox"  placeholder="入力してください">
+                            <input type="text" class="contact-textbox" placeholder="入力してください">
                         </div>
                     </div>
                     <div class="formItem">
@@ -198,7 +236,7 @@
                             <lavel class="contact-label">メールアドレス<span class="contact-span">必須</span></lavel>
                         </div>
                         <div>
-                            <input type="text" class="contact-textbox"  placeholder="入力してください">
+                            <input type="text" class="contact-textbox" placeholder="入力してください">
                         </div>
                     </div>
                     <div class="formItem">
@@ -206,7 +244,7 @@
                             <lavel class="contact-label">電話番号</lavel>
                         </div>
                         <div>
-                            <input type="text" class="contact-textbox"  placeholder="入力してください">
+                            <input type="text" class="contact-textbox" placeholder="入力してください">
                         </div>
                     </div>
                     <div class="formItem">
@@ -285,10 +323,34 @@
                 </form>
             </section>
             <!-- ここまでContact -->
-
-
         </article>
     </main>
+
+    <footer id="footer">
+        <div id="footer-logo">
+            <img src="images/logo-sp.png" alt="SocialTech">
+        </div>
+
+        <div id="footer-link">
+            <a href="mission.html">MISSION</a>
+            <a href="product.html">PRODUCT</a>
+            <a href="index.html#aboutus">ABOUT US</a>
+            <a href="index.html#vision">VISION</a>
+            <a href="index.html#company">COMPANY</a>
+            <a href="index.html#contact">CONTACT</a>
+        </div>
+
+        <div id="sns-footer">
+            <div class="sns-btns">
+                <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png"
+                        alt="Facebookのリンク"></a>
+                <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="Twitterのリンク"></a>
+                <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png"
+                        alt="YouTubeのリンク"></a>
+            </div>
+            <p id="copyright">&copy;2021 SocialTech, Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
 
     <script src="index.js">
     </script>

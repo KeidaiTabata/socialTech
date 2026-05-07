@@ -42,7 +42,7 @@ header {
         text-decoration: none;
     }
 
-    nav {
+    .nav-pc {
         font-size: 14px;
 
         ul {
@@ -59,6 +59,42 @@ header {
             }
         }
     }
+
+    @media screen and (max-width: 767px) {
+
+        .nav-pc {
+            display: none;
+        }
+
+        #menu-sp-btn {
+            display: block;
+            background-color: transparent;
+            float: right;
+            padding: 0;
+            border: 0;
+
+        }
+
+        #nav-sp {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: var(--mainBg-color);
+            z-index: 999;
+
+            #close {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+        }
+    }
+
+
 }
 
 
@@ -266,7 +302,7 @@ header {
             img {
                 width: 100%;
                 position: relative;
-                z-index: 30;                
+                z-index: 30;
             }
 
             div {
@@ -297,18 +333,20 @@ header {
             }
         }
     }
-}/* vision */
+}
+
+/* vision */
 
 /* ここから */
 
-#company {    
+#company {
     #comapny-table {
         width: 100%;
-        
+
         .tableheader-first {
             border-top: var(--mainBg-color) 1px solid;
         }
-        
+
         .tableheader {
             text-align: left;
             padding: 20px;
@@ -335,11 +373,11 @@ header {
 
 #contact {
     form {
-        & > div {
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         padding-bottom: 30px;
+        &>div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-bottom: 30px;
         }
 
         .contact-heading {
@@ -389,6 +427,7 @@ header {
 
             ul {
                 padding-left: 0;
+                list-style: none;
 
                 li {
                     margin-bottom: 0;
@@ -397,5 +436,43 @@ header {
             }
         }
 
+    }
+}
+
+#footer {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 80px 80px 30px 80px;
+
+    #footer-logo {
+        margin-bottom: 30px;
+    }
+
+    #footer-link {
+        margin-bottom: 50px;
+
+        a {
+            text-decoration: none;
+            margin: 10px;
+            color: var(--main-color);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #sns-footer {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            margin-right: 30px;
+        }
+
+        #copyright {
+            color: var(--main-color);
+            margin: 0;
+        }
     }
 }
