@@ -2,6 +2,7 @@
     --main-color: #ffffff;
     --mainBg-color: #2710d5;
     --section-bgColor: #fafafa;
+    --contact-bd-color: #707070;
 }
 
 p {
@@ -332,3 +333,69 @@ header {
     }
 }
 
+#contact {
+    form {
+        & > div {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         padding-bottom: 30px;
+        }
+
+        .contact-heading {
+            width: 240px;
+            align-self: left;
+
+            .contact-span {
+                color: #ce2222;
+                margin-left: 20px;
+                font-weight: bold;
+            }
+        }
+
+        .contact-label {
+            font-weight: bold;
+        }
+
+        .contact-textbox {
+            border: none;
+            border-bottom: 1px #707070 solid;
+            background-color: var(--section-bgColor);
+            width: 400px;
+            height: 56px;
+        }
+
+        .contact-textarea {
+            border: none;
+            width: 400px;
+            height: 200px;
+            border-bottom: 1px var(--contact-bd-color) solid;
+            background-color: var(--section-bgColor);
+        }
+    }
+
+    .contact-agree {
+
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            margin-bottom: 16px;
+
+            p {
+                margin-left: 0;
+            }
+
+            ul {
+                padding-left: 0;
+
+                li {
+                    margin-bottom: 0;
+                    list-style: none;
+                }
+            }
+        }
+
+    }
+}
