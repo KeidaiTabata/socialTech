@@ -9,6 +9,10 @@ p {
     font-size: 15px;
 }
 
+li {
+    list-style: none;
+}
+
 h2 {
     margin-top: 40px;
 
@@ -60,6 +64,15 @@ header {
         }
     }
 
+    #menu-sp-btn {
+        display: none;
+    }
+
+    #nav-sp {
+        display: none;
+        position: fixed;
+    }
+
     @media screen and (max-width: 767px) {
 
         .nav-pc {
@@ -72,11 +85,10 @@ header {
             float: right;
             padding: 0;
             border: 0;
-
+            cursor: pointer;
         }
 
         #nav-sp {
-            display: none;
             position: fixed;
             width: 100%;
             height: 100%;
@@ -85,13 +97,57 @@ header {
             background-color: var(--mainBg-color);
             z-index: 999;
 
+
             #close {
                 position: absolute;
-                right: 0;
-                top: 0;
+                top: 20px;
+                right: 20px;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
             }
 
-        }
+            nav {
+                ul {
+                    padding-left: 0;
+
+                    li:first-child {
+                        margin: 80px 0 30px 20px;
+
+                    }
+
+                    li:not(:first-child) {
+                        height: 44px;
+                        margin: 0 20px 0 20px;
+                        font-size: 16px;
+                        background-image: url("images/arrow.png");
+                        background-repeat: no-repeat;
+                        background-position: top right;
+                    }
+
+                    a {
+                        color: var(--main-color);
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            #sns {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+
+                & > a {
+                    margin-right: 30px;
+                }
+            }
+
+        } /* nav-sp  */
     }
 
 
