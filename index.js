@@ -122,3 +122,10 @@ visionList.forEach(p => {
 
 const visionItems = document.getElementById("visionItems");
 visionItems.innerHTML = visionHTML;
+
+const openSpMenu = () =>  {
+    return document.getElementById("nav-sp").style.display = 'block';
+};
+const closeSpMenu = () =>  {
+    return document.getElementById("nav-sp").style.display = 'none';
+};
