@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="ddescription" content="SocialTechが目指す5つの目標（S2DGs）を紹介します">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/mission.css">
+    <title>SocialTech - MISSION ミッション - </title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" id="logo">
+            <img src="images/logo.png" alt="トップページに戻る">
+        </a>
+
+        <nav class="nav-pc">
+            <ul>
+                <li><a href="mission.html" class="menu" onclick="closeSpMenu()">MISSION</a></li>
+                <li><a href="product.html" class="menu" onclick="closeSpMenu()">PRODUCT</a></li>
+                <li><a href="index.html#abouts" class="menu" onclick="closeSpMenu()">ABOUT US</a></li>
+                <li><a href="index.html#vision" class="menu" onclick="closeSpMenu()">VISION</a></li>
+                <li><a href="index.html#company" class="menu" onclick="closeSpMenu()">COMPANY</a></li>
+                <li><a href="index.html#contact" class="menu" onclick="closeSpMenu()">CONTACT</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- スマホ用ハンバーガーーボタン -->
+        <button id="menu-sp-btn" onclick="openSpMenu()">
+            <img src="images/button-menu.png" alt="ナビゲーションを開く">
+        </button>
+
+        <!-- スマホ用ナビゲーション -->
+        <div id="nav-sp">
+            <button id="close" onclick="closeSpMenu()">
+                <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+            </button>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" id="logo-sp">
+                            <img src="images/logo-sp.png" alt="トップページに戻る">
+                        </a>
+                    </li>
+                    <li><a href="mission.html" class="menu">MISSION</a></li>
+                    <li><a href="product.html" class="menu">PRODUCT</a></li>
+                    <li><a href="index.html#abouts" class="menu">ABOUT US</a></li>
+                    <li><a href="index.html#vision" class="menu">VISION</a></li>
+                    <li><a href="index.html#company" class="menu">COMPANY</a></li>
+                    <li><a href="index.html#contact" class="menu">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="sns">
+                <a href="https://www.facebook.com/sejuku2013">
+                    <img src="images/button-facebook.png" alt="Facebookのリンク">
+                </a>
+                <a href="https://twitter.com/samuraijuku">
+                    <img src="images/button-twitter.png" alt="Twitterのリンク">
+                </a>
+                <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g">
+                    <img src="images/button-youtube.png" alt="YouTubeのリンク">
+                </a>
+            </div>
+        </div><!-- nav-sp -->
+    </header>
+
+    <main>
+        <article>
+            <section id="mission-main">
+                <div class="mission-main-inner">
+                    <div id="mission-title">
+                        <h1>MISSION <span>ミッション</span></h1>
+                        <p>TOP > MISSION</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="mission-s2dgs">
+                <h2 class="mission-h2">S2DGsの実現</h2>
+                <p>国連の掲げる大中小169個の目標「SDGs」のうち、以下の5つの大目標の実現をミッションとします。</p>
+                <img src="images/mission/mission-s2dgs.png" alt="S2DGs">
+            </section>
+
+            <section id="mission-five-goals">
+                <div class="five-goals-image"><img src="images/mission/mission-5goals.png" alt="5goals"></div>
+                <div class="five-goals-read" id="fiveGoals">
+                    <!-- ループで内容が入ります。 -->
+                    <!-- 
+                    <div>
+                        <img class="fivegoals-image-${item.position}" src="images/mission/mission-5goals${item.No}.png"
+                            alt="PCを操作する女の子">
+                        <span class="fivegoals-number">${item.No}</span>
+                        <h3 class="fivegoals-h3">${item.h3}</h3>
+                        <p class="fivegoals-p">${item.p}</p>
+                    </div>
+                    -->
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer id="footer">
+        <div id="footer-logo">
+            <img src="images/logo-sp.png" alt="SocialTech">
+        </div>
+
+        <div id="footer-link">
+            <a href="mission.html">MISSION</a>
+            <a href="product.html">PRODUCT</a>
+            <a href="index.html#aboutus">ABOUT US</a>
+            <a href="index.html#vision">VISION</a>
+            <a href="index.html#company">COMPANY</a>
+            <a href="index.html#contact">CONTACT</a>
+        </div>
+
+        <div id="sns-footer">
+            <div class="sns-btns">
+                <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png"
+                        alt="Facebookのリンク"></a>
+                <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="Twitterのリンク"></a>
+                <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png"
+                        alt="YouTubeのリンク"></a>
+            </div>
+            <p id="copyright">&copy;2021 SocialTech, Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="src/scripts/common.js"></script>
+    <script src="src/scripts/mission.js"></script>
+</body>
+
+</html>
